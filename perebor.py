@@ -27,10 +27,10 @@ def brute_excel_doc():
         elif choice == 4:
             possible_symbols = digits + ascii_letters + punctuation
         else:
-            possible_symbols = "You entered something wrong"
+            possible_symbols = "You entered something wrong "
         print(possible_symbols)
     except:
-        print("You entered something wrong.")
+        print("You entered something wrong. ")
 
     for pass_length in range(password_length[0], password_length[1] + 1):
         for password in itertools.product(possible_symbols, repeat=pass_length):
